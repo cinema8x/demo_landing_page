@@ -153,6 +153,9 @@ a {
     background-color: #fff;
 }
 
+.main-1{
+    display: flex;
+}
 .main-1 img {
     width: 600px;
     /* border: 1px solid rgba(255, 255, 255, 0.647); */
