@@ -1,0 +1,157 @@
+
+
+/* The Modal (background) */
+.login-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 11; 
+  left: 0;
+  top: 0;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.539); 
+}
+
+
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 10% auto;
+  width: 400px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 15px;
+}
+.modal-head{
+  padding: 10px 20px;
+  height: 38px;
+}
+.modal-title{
+  text-align: center;
+  color: rgb(255, 98, 0);
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body{
+  margin: 20px auto auto;
+}
+.login-form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.text-field{
+  margin: 30px 0;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+}
+
+.text-field input{
+  width: 100%;
+  padding: 0;
+  height: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.text-field label{
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  color: #adadad;
+  font-family: sans-serif;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.text-field span::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 98, 0);
+  transition: .5s;
+
+}
+
+.text-field input:focus~ label,
+.text-field input:valid~ label{
+  top: -5%;
+  color: rgb(255, 98, 0);
+}
+
+.text-field input:focus~ span::before,
+.text-field input:valid~ span::before{
+width: 100%;
+}
+.pass{
+text-align: center;
+margin: 5px 0 20px;
+}
+.pass a{
+font-family: sans-serif;
+text-decoration: none;
+color: #939393;
+cursor: pointer;
+}
+.pass a:hover{
+text-decoration: underline;
+}
+
+input[type="submit"]{
+width: 100%;
+height: 40px;
+background-color: rgb(255, 98, 0);
+border: 1px solid rgb(255, 98, 0) ;
+color: #fefefe;
+border-radius: 5px;
+font-size: 18px;
+font-weight: 700;
+cursor: pointer;
+}
+
+input[type="submit"]:hover{
+background-color: #fefefe;
+color: rgb(255, 98, 0);
+}
+.singup-link{
+margin: 35px 0;
+text-align: center;
+font-family: sans-serif;
+font-size: 16px;
+color: #666666;
+}
+
+.singup-link a{
+color: rgb(255, 98, 0);
+text-decoration: none;
+font-size: 16px;
+}
+.singup-link a:hover{
+text-decoration: underline;
+}

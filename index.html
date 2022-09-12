@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responciv.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/responciv.css">
     <title>codify</title>
 </head>
 
@@ -34,14 +35,45 @@
                 </ul>
             </div>
             <div class="container-2">
-                <button class="btn-login">Login</button>
-                <button class="btn-started">Get Started</button>
+                <button type="button" class="btn-login" id="btnlogin">Login</button>
+                <button type="button" class="btn-started" id="btnstarted">Get Started</button>
             </div>
         </div>
     </nav>
 
+    <!-- modal -->
+    <div class="login-modal" id="loginmodal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title">Login to Codify</div>
+                <form class="login-form" action="">
+                    <div class="text-field">
+                        <input type="email" name="email" required>
+                        <span></span>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="text-field">
+                        <input type="password" name="password" required>
+                        <span></span>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="pass"><a href="forget-pass.html">Forget Password?</a></div>
+                    <input type="submit" name="submit" value="Login">
+                    <div class="singup-link">
+                        Not a Member ? <a href="singup.html">SingUp</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
 
 
+    <!-- whole body -->
     <div class="whole-body">
         <!-- poster -->
         <div class=" main">
@@ -81,20 +113,28 @@
                     <img src="img/web-dev-img.jpg" alt="...">
                 </div>
                 <div class="web-des">
-                    <h3>Types of Web Development?</h3>
-                    <p>Web developer is the most interasting career path for computer science major because it combine
-                        analytical and technical skills with creativ design and development.</p>
-                    <a href="web-description.html">Read More</a>
+                    <h3>About Codify?</h3>
+                    <p>Codify Inc. is a U.S.-based massive open online course provider founded in 2013 by Stanford
+                        University computer science professors Scott Ng and Ollie Koller. Coursera works with
+                        universities and other organizations to offer online courses, certifications, and degrees in a
+                        variety of subjects.</p>
+                    <a href="about-codify.html">Read More</a>
                 </div>
             </div>
         </div>
 
+
+
+
+
+
+        <!-- feedback -->
         <div class="contact">
             <hr>
             <br>
             <br>
             <h1 style="text-align: center;">
-                <a href="https://instagram.com/_amit.vish?igshid=YmMyMTA2M2Y=">Click Here and give feedback ⚠️⚠️</a>
+                <a href="https://instagram.com/_amit.vish?igshid=YmMyMTA2M2Y=">⚠️Click Here and give feedback⚠️</a>
             </h1>
             <br>
             <br>
@@ -166,14 +206,21 @@
     </div>
 
     <footer class="foot">
+        <div class="foot-links">
+
+        </div>
         <p>2022 &copy;codify.com </p>
     </footer>
 
 </body>
 
-    <script>
+<script src="js/script.js"></script>
 
-        alert("This page is a demo project and is under cunstruction..😁😁 SCROLL DOWN AND GIVE FEEDBACK ⚠️⚠️⚠️ ")
-    </script>
 
 </html>
+
+
+
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> -->
