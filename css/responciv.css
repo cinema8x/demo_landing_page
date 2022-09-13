@@ -178,6 +178,9 @@
 
 @media (max-width: 800px) { 
 
+    .navbar{
+        padding: 5px 5px;
+    }
     .count{
         width: 150px;
     }
