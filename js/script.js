@@ -1,4 +1,4 @@
-alert("This page is a demo project and is under cunstruction..😁😁 SCROLL DOWN AND GIVE FEEDBACK ⚠️⚠️⚠️ ")
+alert("This page is a demo project and is under cunstruction..😁😁  ")
 
 
 // Get the modal
